@@ -1,7 +1,9 @@
-import { defineJestConfig } from "@pythnetwork/jest-config/define-config";
-
-export default defineJestConfig({
+/** @type {import("jest").Config} */
+export default {
+  extensionsToTreatAsEsm: [".ts"],
   moduleNameMapper: {
     "^uuid$": "uuid",
   },
-});
+  preset: "ts-jest/presets/default-esm",
+  testEnvironment: "node",
+};
