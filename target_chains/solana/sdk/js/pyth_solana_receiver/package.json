@@ -10,6 +10,7 @@
   "description": "Pyth solana receiver SDK",
   "devDependencies": {
     "@pythnetwork/hermes-client": "workspace:*",
+    "@pythnetwork/jest-config": "workspace:",
     "@types/jest": "^29.4.0",
     "@types/node": "catalog:",
     "jest": "^29.4.0",
@@ -127,9 +128,10 @@
     "build": "ts-duality",
     "clean": "rm -rf ./dist",
     "prepublishOnly": "pnpm run build",
+    "test:unit": "jest",
     "version": "pnpm run format && git add -A src"
   },
   "type": "module",
   "types": "./dist/cjs/index.d.ts",
-  "version": "0.16.0"
+  "version": "0.16.1"
 }
