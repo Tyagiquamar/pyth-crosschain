@@ -10,6 +10,11 @@
   "engines": {
     "node": "^24.0.0"
   },
+  "files": [
+    "*.sol",
+    "abis/**/*.json",
+    "README.md"
+  ],
   "homepage": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ethereum/entropy_sdk/solidity",
   "keywords": [
     "pyth",
@@ -31,5 +36,5 @@
     "test": "git diff --exit-code abis"
   },
   "type": "module",
-  "version": "2.2.1"
+  "version": "2.2.2"
 }
